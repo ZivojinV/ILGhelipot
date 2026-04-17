@@ -1,23 +1,28 @@
-# SUBD25Helipot
-Custom control board based on the PIC16F15244 with RS-485 communication, helipot input, and 7-segment display feedback.
+# ILGhelipot
+Custom-designed control board built around the PIC16F15224 microcontroller.
 
 ## ⚙️ Functionality
 
-The system uses a helical potentiometer (helipot) as the main input. By rotating the helipot, the board sends control signals to increase or decrease the output voltage of a connected device.
+The system uses a helical potentiometer (helipot) as the main input. By rotating the helipot, the board generates a PWM signal that can be used to control external devices.
 
-The current position is displayed on 7-segment displays as a value from **0 to 1023**, providing a visual indication of the adjustment level.
-
-The system has been tested and verified to work reliably.
+The PWM duty cycle is adjusted based on the helipot position, allowing precise and smooth control.
 
 ## 💻 Firmware
 
 This repository includes the firmware responsible for:
 - Reading the helipot input  
-- Handling RS-485 communication  
-- Driving the 7-segment displays  
+- Generating the PWM signal  
+- Controlling system behavior  
+
+## 🔌 Hardware Overview
+
+The board includes:
+- PIC16F15224 microcontroller  
+- 7805 voltage regulator  
+- SUB-D25 connector for signal interfacing  
 
 ## 🧩 Hardware Design
 
 The repository also includes hardware design files:
 - Schematic (circuit design)  
-- PCB layout (printed circuit board design)  
+- PCB layout (printed circuit board design) 
