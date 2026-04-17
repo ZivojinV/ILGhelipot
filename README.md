@@ -25,4 +25,3 @@ The board includes:
 
 The repository also includes hardware design files:
 - Schematic (circuit design)  
-- PCB layout (printed circuit board design) 
